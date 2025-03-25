@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <manifest>
   <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral" />
+  <remote fetch="ssh://git@github.com/rdk-e" name="rdke" review="https://github.com/rdk-e" />
 
   <project groups="rdk" name="meta-middleware-generic-support" path="meta-middleware-generic-support" remote="rdkcentral" revision="hg-bringup">
   <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_MIDDLEWARE_DEV_GENERIC" />
@@ -13,6 +14,10 @@
 
   <project groups="rdk" name="meta-rdk-video" path="meta-rdk-video" remote="rdkcentral" revision="a553be4fefa461b3d68c36caa162be63732e4c5b">
   <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_VIDEO" />
+  </project>
+
+  <project groups="rdk" name="meta-rdk-voice-sdk" path="meta-rdk-voice-sdk" remote="rdke" revision="refs/tags/1.6.1-alpha">
+  <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_VOICE_SDK" />
   </project>
 
 </manifest>
